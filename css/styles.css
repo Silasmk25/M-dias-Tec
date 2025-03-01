@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: 'Roboto', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.link-contact {
+    color: blue;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all .5s ease;
+}
+
+.link-contact:hover {
+    transform: translate(1);
+}
+
+.logo {
+    width: 3rem;
+}
+
+.trait {
+    border-bottom: 1px solid;
+}
+
+.gb-image {
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../images/land-scap.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 0;
+}
+
+.mb-5 .img-fluid {
+    width: 1280px;
+    height: 500px;
+}
+
+.opacyte {
+    opacity: .5;
+}
+
+.bordures {
+    border-top: 4px solid #f50000;
+}
+
+.top-item {
+    margin-top: 1rem;
+}
+
+.flou {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,.5);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+}
+
+.col-md-5 .img-fluid{
+    width: 400px;
+    height: 400px;
+}
+
+.col-md-7 .img-fluid{
+    width: 400px;
+    height: 400px;
+}
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+.card-img-top {
+    object-fit: cover;
+    height: 200px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.card-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.bg-custom {
+    background-color: #f8f9fa; /* Couleur douce pour le fond */
+}
+
+.col-md-5-2 {
+    flex: 0 0 auto;
+    width: 41.666667%; /* Légèrement plus petit que col-md-5 (41.666667% -> 40%) */
+    margin-right: 15px; /* Ajustement de marge pour la différence */
+}
+.col-md-6-2 {
+    flex: 0 0 auto;
+    width: 50%; /* Légèrement plus petit que col-md-6 (50% -> 48%) */
+    margin-right: 15px;
+}
+.offset-md-2-2 {
+    margin-left: 16.666667%; /* Légèrement ajusté par rapport à offset-md-2 (16.666667% -> 15%) */
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    background-color: #f8f9fa; /* Couleur douce pour le fond */
+}
+.triangle-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 400px; /* Ajustez pour l'effet triangulaire */
+}
+.top-card {
+    margin-bottom: 30px; /* Espacement entre les cartes du haut et du bas */
+}
+.bottom-card {
+    margin-top: auto; /* Pour centrer verticalement la carte du bas */
+}
+.card-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+/* Ajustement pour les écrans plus petits */
+@media (max-width: 768px) {
+    .triangle-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .top-card, .bottom-card {
+        margin: 10px 0;
+    }
+    .col-md-5-2, .col-md-6-2 {
+        width: 100%; /* Full width sur mobile */
+    }
+    .offset-md-2-2 {
+        margin-left: 0; /* Pas de décalage sur mobile */
+    }
+}
+
+
+/* Styles généraux pour les cartes */
+.card-4 {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #f8f9fa; /* Couleur douce pour le fond */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card-4:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card-container-4 {
+    margin-bottom: 20px;
+  }
+  
+  .card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .card-icon-4 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Ajustement pour les écrans plus petits */
+  @media (max-width: 768px) {
+    .row > div {
+      transform: translateX(0) !important; /* Réinitialise les décalages sur petits écrans */
+      margin-bottom: 20px; /* Ajoute de l'espace entre les cartes */
+    }
+  }
