@@ -178,3 +178,274 @@ body {
       margin-bottom: 20px; /* Ajoute de l'espace entre les cartes */
     }
   }
+
+  /* Styles généraux pour les cartes */
+
+/* Styles généraux pour les cartes */
+/* Styles généraux pour les cartes */
+.card-5 {
+    border: none; /* Supprime la bordure par défaut */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre subtile pour un effet 3D */
+    margin-bottom: 20px; /* Espacement entre les cartes */
+    background-color: #f8f9fa; /* Couleur douce pour le fond */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation fluide au survol */
+  }
+  
+  /* Effet hover pour rendre les cartes interactives */
+  .card-5:hover {
+    transform: translateY(-10px); /* Montée légère au survol */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15); /* Ombre plus prononcée */
+  }
+  
+  /* Conteneur principal pour l'effet triangle descendant */
+  .triangle-container-5 {
+    display: flex; /* Utilisation de Flexbox */
+    justify-content: end; /* Alignement des cartes à droite */
+    align-items: flex-start; /* Alignement vertical en haut */
+    min-height: 400px; /* Hauteur minimale pour l'effet triangulaire */
+    position: relative; /* Permet d'utiliser z-index */
+  }
+  
+  /* Espacement entre les cartes du haut et du bas */
+  .top-card-5 {
+    margin-bottom: 30px;
+  }
+  
+  /* Centrage vertical de la carte du bas */
+  .bottom-card-5 {
+    margin-top: auto;
+  }
+  
+  /* Style pour les icônes dans les cartes */
+  .card-icon-5 {
+    font-size: 2rem; /* Taille de police pour les icônes */
+    margin-bottom: 1rem; /* Espacement sous les icônes */
+  }
+  
+  /* Décalage vers la gauche pour créer l'effet d'escalier */
+  .col-md-4-5 {
+    position: relative; /* Permet d'utiliser transform */
+  }
+  
+  /* Première carte (pas de décalage) */
+  .col-md-4-5:nth-child(1) {
+    z-index: 1; /* Assure que la carte est en arrière-plan */
+    transform: translateX(0); /* Pas de décalage */
+  }
+  
+  /* Deuxième carte (décalée vers la gauche) */
+  .col-md-4-5:nth-child(2) {
+    z-index: 2; /* Place la carte au-dessus de la première */
+    transform: translateX(-50px); /* Décalage vers la gauche */
+  }
+  
+  /* Troisième carte (plus décalée vers la gauche) */
+  .col-md-4-5:nth-child(3) {
+    z-index: 3; /* Place la carte au premier plan */
+    transform: translateX(-100px); /* Décalage plus important */
+  }
+  
+  /* Ajustement pour les écrans plus petits */
+  @media (max-width: 768px) {
+    /* Passage à une disposition verticale sur mobile */
+    .triangle-container-5 {
+      flex-direction: column; /* Empile les cartes verticalement */
+      align-items: center; /* Centre les cartes horizontalement */
+      justify-content: center; /* Centre les cartes verticalement */
+    }
+  
+    /* Réinitialisation des transformations et ajustements pour mobile */
+    .col-md-4-5 {
+      transform: translateX(0) !important; /* Réinitialise les décalages */
+      margin: 10px 0; /* Ajoute de l'espace entre les cartes */
+      width: 100%; /* Largeur pleine sur mobile */
+    }
+  }
+
+  /* Styles personnalisés pour la section "Confiance" */
+#confiance {
+    background-color: #f8f9fa; /* Fond doux pour contraster avec le contenu */
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  
+  #confiance .card {
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  #confiance .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  #confiance .card i {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+  
+  #confiance .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333333;
+  }
+  
+  #confiance .card-text {
+    color: #555555;
+  }
+  
+  #confiance img {
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    #confiance .col-md-4 {
+      margin-bottom: 20px; /* Espacement entre les cartes sur mobile */
+    }
+  }
+
+  /* Style pour la section Contact */
+.contact-section {
+    background-color: #f8f9fa;
+  }
+  
+  .contact-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-section .form-control:focus {
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  .contact-section .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .contact-section .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+  }
+
+  /* Style pour le Footer */
+.footer-section {
+    background-color:#004085;
+    color: #ffffff;
+  }
+  
+  .footer-section h5 {
+    font-size: 25px;
+    margin-bottom: 1rem;
+    color: #ffffff;
+  }
+  
+  .footer-section a {
+    color: #f0f3f5;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-section a:hover {
+    color: #eef2f6;
+    text-decoration: none;
+  }
+  
+  .footer-section .list-inline-item {
+    margin-right: 25px;
+  }
+  
+  .footer-section .list-inline-item a i {
+    color: #adb5bd;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-section .list-inline-item a i:hover {
+    color: #fefefe;
+  }
+
+  /* Animation pour la navbar */
+.navbar {
+    transition: all 0.3s ease;
+}
+
+.navbar.scrolled {
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Animation pour les éléments */
+.fade-in {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Bouton retour en haut */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    width: 50px;
+    height: 50px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.back-to-top:hover {
+    background-color: #218838;
+}
+/* Styles pour les nouvelles animations */
+.reveal {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: all 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.card {
+    transform: perspective(1000px) rotateY(15deg);
+    opacity: 0;
+    transition: all 0.6s ease-out;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card.visible {
+    transform: perspective(1000px) rotateY(0deg);
+    opacity: 1;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+#particles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+}
+
+/* Effet de hover amélioré */
+.card:hover {
+    transform: perspective(1000px) rotateY(0deg) translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+}

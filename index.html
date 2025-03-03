@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+  <canvas id="particles"></canvas>
   <header>
     <div class="bg-success py-3">
       <div class="container">
@@ -45,7 +46,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#">Accueil</a>
+            <a class="nav-link" href="#home">Accueil</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#about">A propos de nos médias</a>
@@ -54,10 +55,10 @@
             <a class="nav-link" href="#media">Les médias connues en CI</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">La confiances en nos médias</a>
+            <a class="nav-link" href="#confiance">La confiances en nos médias</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#contact">Contactez-nous</a>
           </li>
         </ul>
       </div>
@@ -65,12 +66,12 @@
   </nav>
   
   <!--section hero-->
-  <section class="mb-5" id="about">
+  <section class="mb-5" id="home">
     <img src="images/Médias-Tec.png" class="img-fluid" alt="">
   </section>
   
   <!--section about-->
-  <section class="mb-5">
+  <section class="mb-5" id="about">
     <div class="container">
       <h2 class="h4 mb-4 text-primary text-center fw-bold ">
         <span>A propos de nos médias</span>
@@ -128,7 +129,11 @@
   </section>
 
   <!--section media-->
+  <section id="media">
   <div class="container my-5">
+    <h2 class="h4 mb-4 text-primary text-center fw-bold ">
+      <span>Les médias connues en CI</span>
+    </h2>
     <div class="row">
         <!-- Colonne 1 : Cible du projet -->
         <div class="col-md-4 mb-4">
@@ -153,7 +158,7 @@
         <!-- Colonne 2 : Structures d’interventions ciblées -->
         <div class="col-md-4 mb-4">
             <div class="card h-100">
-                <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Image structures d’interventions">
+                <img src="images/population.jpg" class="card-img-top" alt="Image structures d’interventions">
                 <div class="card-body text-center bg-custom">
                     <div class="card-icon text-success mb-3">
                         <i class="bi bi-building"></i>
@@ -263,7 +268,7 @@
     <!-- Carte 2 : Décalée légèrement vers la gauche -->
     <div class="col-md-4 card-container-4 position-relative" style="z-index: 2; transform: translateX(-50px);">
       <div class="card card-4 text-center p-4">
-        <img src="https://via.placeholder.com/300x200?text=Structures+d%27Intervention" class="card-img-top img-fluid" alt="Structures d'intervention">
+        <img src="images/commu-lifetv.jpg" class="card-img-top img-fluid" alt="Structures d'intervention">
         <div class="card-body">
           <i class="bi bi-building card-icon-4 text-success"></i>
           <h5 class="card-title">Structures d’interventions ciblées</h5>
@@ -277,7 +282,7 @@
     <!-- Carte 3 : La plus décalée vers la gauche -->
     <div class="col-md-4 card-container-4 position-relative" style="z-index: 3; transform: translateX(-100px);">
       <div class="card card-4 text-center p-4">
-        <img src="https://via.placeholder.com/300x200?text=Communaut%C3%A9s+Locales" class="card-img-top img-fluid" alt="Communautés locales">
+        <img src="images/population-lifetv.jpg" class="card-img-top img-fluid" alt="Communautés locales">
         <div class="card-body">
           <i class="bi bi-people card-icon-4 text-warning"></i>
           <h5 class="card-title">Communautés locales</h5>
@@ -289,13 +294,228 @@
     </div>
   </div>
 </div>
+
+<div class="container my-5">
+  <div class="row justify-content-end position-relative">
+    <!-- Carte 1 : La plus à droite -->
+    <div class="col-md-4 card-container-5 position-relative" style="z-index: 1;">
+      <div class="card card-5 text-center p-4">
+        <img src="images/abidjan.jpg" class="card-img-top img-fluid" alt="Actualités">
+        <div class="card-body">
+          <i class="bi bi-newspaper card-icon-5 text-primary"></i>
+          <h5 class="card-title">cible du projet</h5>
+          <p class="card-text">
+            Abidjan.net vise principalement les résidents ivoiriens, la diaspora, les professionnels des médias, les entreprises et les touristes. La plateforme offre des actualités locales, des services pratiques, des opportunités économiques et des ressources éducatives. Elle favorise la connexion entre communautés tout en restant un hub d'information et de services pour le public francophone.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Carte 2 : Décalée légèrement vers la gauche -->
+    <div class="col-md-4 card-container-5 position-relative" style="z-index: 2; transform: translateX(-50px);">
+      <div class="card card-5 text-center p-4">
+        <img src="images/abi.jpg" class="card-img-top img-fluid" alt="Communautés">
+        <div class="card-body">
+          <i class="bi bi-people card-icon-5 text-success"></i>
+          <h5 class="card-title">Communautés</h5>
+          <p class="card-text">
+            La communauté Abidjan.net rassemble des internautes ivoiriens, africains et francophones autour d'échanges sur l'actualité, la culture et les opportunités économiques. Elle favorise le partage d'idées, la solidarité et la collaboration entre membres via forums, annonces et événements, créant un espace connecté pour tous.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Carte 3 : La plus décalée vers la gauche -->
+    <div class="col-md-4 card-container-5 position-relative" style="z-index: 3; transform: translateX(-100px);">
+      <div class="card card-5 text-center p-4">
+        <img src="images/service.jpg" class="card-img-top img-fluid" alt="Services">
+        <div class="card-body">
+          <i class="bi bi-building card-icon-5 text-warning"></i>
+          <h5 class="card-title">Services</h5>
+          <p class="card-text">
+            Les services d'Abidjan.net incluent des actualités en temps réel, des annonces gratuites (emploi, immobilier), des guides pratiques, des forums de discussion et des outils pour les entreprises. La plateforme propose également des services de publicité ciblée et des ressources éducatives, facilitant la vie quotidienne des utilisateurs.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
   </section>
 
-  <!--section confiance-->
-  <section class="mb-5" id="confiance">
+
+<!-- Section Confiance -->
+<section class="mb-5" id="confiance">
+  <div class="container">
+    <div class="row text-center mb-4">
+      <!-- Titre principal -->
+      <div class="col-md-12">
+        <h2 class="display-6 fw-bold text-primary">La confiance des Ivoiriens dans les médias</h2>
+        <p class="lead">
+          Découvrez les résultats de notre enquête exclusive sur la crédibilité perçue des médias en Côte d'Ivoire. Plus de 2000 participants ont partagé leur avis.
+        </p>
+      </div>
+    </div>
+
+    <!-- Contenu détaillé avec images -->
+    <div class="row justify-content-center">
+      <!-- Médias Traditionnels -->
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-sm h-100">
+          <img src="images/tele.jpg" class="card-img-top img-fluid" alt="Médias Traditionnels">
+          <div class="card-body text-center">
+            <i class="bi bi-newspaper fs-1 text-success"></i>
+            <h5 class="card-title mt-3">Médias Traditionnels</h5>
+            <p class="card-text">
+              Les médias traditionnels (journaux, radios, télévisions) restent une source fiable d'information pour 78% des Ivoiriens. Ils offrent des contenus vérifiés et approfondis, notamment sur l'actualité locale et internationale. Ces supports historiques conservent leur place malgré la montée du numérique.
+            </p>
+            <p class="fw-bold text-muted">Exemple : Fréquence 2, Notre Voie, RTI.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Médias En Ligne -->
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-sm h-100">
+          <img src="images/media.jpeg" class="card-img-top img-fluid" alt="Médias En Ligne">
+          <div class="card-body text-center">
+            <i class="bi bi-globe fs-1 text-primary"></i>
+            <h5 class="card-title mt-3">Médias En Ligne</h5>
+            <p class="card-text">
+              Les médias en ligne séduisent 65% des jeunes Ivoiriens grâce à leur accessibilité et rapidité. Plateformes comme Abidjan.net proposent des actualités fraîches et diversifiées. Elles combinent innovation et fiabilité, devenant un choix privilégié pour suivre l'actualité en temps réel.
+            </p>
+            <p class="fw-bold text-muted">Exemple : Abidjan.net, Koaci.com.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Réseaux Sociaux -->
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-sm h-100">
+          <img src="images/phone.jpg" class="card-img-top img-fluid" alt="Réseaux Sociaux">
+          <div class="card-body text-center">
+            <i class="bi bi-chat-square-text fs-1 text-warning"></i>
+            <h5 class="card-title mt-3">Réseaux Sociaux</h5>
+            <p class="card-text">
+              Bien que populaires auprès des Ivoiriens (42% de confiance), les réseaux sociaux restent une source d'information moins fiable en raison des fake news. Facebook, WhatsApp et autres plateformes facilitent l'échange rapide mais nécessitent vigilance face aux informations non vérifiées.
+            </p>
+            <p class="fw-bold text-muted">Exemple : Facebook, WhatsApp.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Graphique Illustratif -->
+    <div class="row justify-content-center mb-4">
+      <div class="col-md-8">
+        <img src="images/graphique.jpg" class="img-fluid rounded" alt="Graphique de Confiance dans les Médias">
+        <p class="text-center text-muted mt-2">
+          Source : Étude menée par Abidjan.net 
+        </p>
+      </div>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="row text-center">
+      <div class="col-md-12">
+        <a href="#contact" class="btn btn-primary btn-lg">En savoir plus sur nos études</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section Contact -->
+<section class="contact-section py-5" id="contact">
+  <div class="container">
+    <!-- Titre principal -->
+    <div class="row text-center mb-4">
+      <div class="col-md-12">
+        <h2 class="display-6 fw-bold text-primary">Contactez-nous</h2>
+        <p class="lead">
+          N'hésitez pas à nous envoyer un message pour toute question ou suggestion.
+        </p>
+      </div>
+    </div>
+
+    <!-- Formulaire de Contact -->
+    <div class="row justify-content-center">
+      <div class="col-md-8 col-lg-6">
+        <form id="contactForm" action="#" method="POST" class="shadow p-4 rounded">
+          <!-- Champ Nom -->
+          <div class="mb-3">
+            <label for="name" class="form-label">Nom complet</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Votre nom" required>
+          </div>
+
+          <!-- Champ Email -->
+          <div class="mb-3">
+            <label for="email" class="form-label">Adresse e-mail</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="votre.email@example.com" required>
+          </div>
+
+          <!-- Champ Sujet -->
+          <div class="mb-3">
+            <label for="subject" class="form-label">Sujet</label>
+            <input type="text" class="form-control" id="subject" name="subject" placeholder="Objet du message" required>
+          </div>
+
+          <!-- Champ Message -->
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" name="message" rows="5" placeholder="Écrivez votre message ici..." required></textarea>
+          </div>
+
+          <!-- Bouton Envoyer -->
+          <div class="d-grid">
+            <button type="submit" class="btn btn-primary btn-lg">Envoyer</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Informations de Contact -->
+    <div class="row mt-5">
+      <div class="col-md-4 text-center">
+        <i class="bi bi-geo-alt fs-1 text-primary"></i>
+        <h5 class="mt-3">Bingerville/Marina</h5>
+        <p>Abidjan, Côte d'Ivoire</p>
+      </div>
+</section>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
   crossorigin="anonymous"></script>
+
+  <!-- Bouton retour en haut -->
+<button class="back-to-top" aria-label="Retour en haut">
+  <i class="fas fa-arrow-up"></i>
+</button>
+<script src="js/scripts.js"></script>
 </body>
+
+<!-- Footer -->
+<footer class="footer-section py-5" id="footer">
+  <div class="container">
+    <!-- Contenu du Footer -->
+    <div class="row gy-4">
+
+      <!-- Section À Propos -->
+      <div class="col-md-4">
+        <h5 class="text-primary">À propos</h5>
+        <p>
+          Nous sommes une équipe passionnée par l'information et la technologie. Notre mission est de fournir des données fiables et à jour aux Ivoiriens.
+        </p>
+      </div>
+
+      <!-- Section Liens Utiles -->
+      <div class="col-md-3">
+        <h5 class="text-primary">Liens utiles</h5>
+        <ul class="list-unstyled">
+          <li><a href="#home" class="text-muted text-decoration-none">Accueil</a></li>
+          <li><a href="#confiance" class="text-muted text-decoration-none">Confiance dans les médias</a></li>
+          <li><a href="#contact" class="text-muted text-decoration-none">Contact</a></li>
+          <li><a href="#media" class="text-muted text-decoration-none">Les médias connues en CI</a></li>
+          <li><a href="#about" class="text-muted text-decoration-none">A propos de nos médias</a></li>
+        </ul>
+      </div>
+</footer>
 </html>
